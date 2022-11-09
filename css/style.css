@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    background-color: #F3F3F3;
+}
+.section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+/* @media(max-width:767px) {
+    .info {
+        grid-template-columns: auto;
+    }
+    .info .profile {
+        border-bottom: 2px #F3F3F3 solid;
+    }
+    .info .describtion p {
+        margin-bottom: 50px;
+    }
+} */
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px;
+}
+.info .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    border-right: 2px #F3F3F3 solid;
+}
+.info .profile img {
+    width: 150px;
+    border-radius: 50%;
+}
+.info .profile span {
+    font-weight: 700;
+}
+.info .profile .progress {
+    width: 180px;
+    height: 20px;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+}
+.info .profile .progress>div {
+    height: 100%;
+    width: 70%;
+    background-color: #43aa8b;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.info .profile .point span {
+    color: #43aa8b;
+}
+.info .profile .point {
+    font-size: 14px;
+}
+
+.info .describtion {
+    padding: 20px;
+    position: relative;
+}
+.info .describtion h3 {
+    margin: 0;
+}
+.info .describtion p {
+    padding-left: 10px;
+    letter-spacing: .5px;
+    line-height: 2;
+}
+.info .describtion span {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* SECOND SECTION */
+
+.title {
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+.points {
+
+}
+.points .content p {
+    margin: 0;
+    padding: 10px;
+}
+.points .content p:not(:last-child) {
+    border-bottom: 1px #eee solid;
+}
+.points .content p span:first-child {
+    color: #43aa8b;
+    font-weight: 700;
+}
+.points .content p span:last-child {
+    color: #da2c38;
+    font-weight: 700;
+}
+
+.trophies .content {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    gap: 20px;
+}
+.trophies .content img {
+    width: 100%;
+    border-radius: 5px;
+}
+.trophies .content img.disable {
+    filter: brightness(50%);
+}
+
+.news p {
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.news p span:first-child {
+    color: #da2c38;
+    font-weight: 700;
+}
+.news p span:last-child {
+    color: #43aa8b;
+    font-weight: 700;
+}
+
+.powers p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 15px;
+}
+.powers p:not(:last-child) {
+    border-bottom: 1px #eee solid;
+}
+.powers p span {
+    font-weight: 700;
+    color: #43aa8b;
+}
+.powers p span.no {
+    color: #da2c38;
+}
